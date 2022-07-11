@@ -1,4 +1,5 @@
 import styles from 'App.module.css';
+import { Header } from './components/Header';
 
 import './global.css';
 
@@ -6,9 +7,7 @@ function App() {
 
   return (
     <>
-      <header>
-      <h1>Hello World</h1>
-      </header>
+      <Header />
       <main>
         
       </main>
