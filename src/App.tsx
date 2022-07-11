@@ -1,11 +1,18 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import styles from 'App.module.css';
+
+import './global.css';
 
 function App() {
 
   return (
-    <h1>Hello World</h1>
+    <>
+      <header>
+      <h1>Hello World</h1>
+      </header>
+      <main>
+        
+      </main>
+    </>
   )
 }
 
