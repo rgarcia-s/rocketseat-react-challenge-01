@@ -25,11 +25,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+}
+
+html {
+ font-size: 10px; 
 }
 
 body {
-  background-color: #454545;
+  background-color: var(--gray-600);
   color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
 }
@@ -37,5 +40,5 @@ body {
 body, input, textarea, input {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
