@@ -101,7 +101,7 @@ function App() {
               </div>
             ) :
             tasks.map(task => (
-              <div className={styles.listContent}>
+              <div key={task.id} className={styles.listContent}>
                 <div>
                   <div className={task.done ? styles.checkBoxDone : styles.checkBox} onClick={() => handleTaskDone(task.id)}>
                     <Check />
