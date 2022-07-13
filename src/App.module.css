@@ -52,6 +52,13 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 80%;
+  cursor: not-allowed;
 }
 
 .form svg {
@@ -96,7 +103,7 @@
   border-radius: 999px;
 }
 
-.listContent {
+.emptyListContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,10 +117,111 @@
   border-radius: 8px;
 }
 
-.listContent img {
+.emptyListContent img {
   height: 5.6rem;
   width: 5.6rem;
 
   margin: 6.4rem 0 1.6rem;
 }
- 
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  line-height: 1.4;
+}
+
+.listContent > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background: var(--gray-500);
+
+  margin-bottom: 1.2rem;
+  padding: 1.6rem;
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.listContent > div p {
+  max-width: 62.3rem;
+
+  flex: 1;
+
+  font-size: 1.4rem;
+}
+
+.taskDone {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.listContent > div button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 4px;
+
+  flex-shrink: 0;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  margin-top: -0.15rem;
+
+  color: var(--gray-300);
+
+  transition: background 0.2s;
+  transition: color 0.2s;
+}
+
+.listContent > div svg{
+  height: 1.7rem;
+  width: 1.5rem;
+}
+
+.listContent > div button:hover{
+  background: var(--gray-400);
+  color: var(--red-500);
+}
+
+.checkBox {
+  width: 1.65rem;
+  height: 1.65rem;
+
+  margin: 0.25rem;
+
+  flex-shrink: 0;
+  
+  border: 2px solid var(--blue-500);
+  border-radius: 100%;
+
+  transition: background 0.2s
+}
+
+.checkBox svg {
+  display: none;
+}
+
+.checkBoxDone {
+  display: flex;
+  align-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+
+  margin: 0.25rem;
+
+  flex-shrink: 0;
+  
+  background: var(--purple-300);
+  border: 2px solid var(--purple-300);
+  border-radius: 100%;
+
+  transition: background 0.2ss
+}
